@@ -1,0 +1,89 @@
+body {
+  background: #e0f7fa;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0; padding: 30px;
+}
+
+h1 { text-align: center; }
+
+#marketplace {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+.stall {
+  background: #fff3e0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px #ffe0b2;
+  text-align: center;
+  width: 200px;
+  position: relative;
+}
+
+.center-market {
+  width: 220px;
+  position: relative;
+}
+
+.character {
+  width: 90px;
+  transition: transform 0.2s;
+  animation: bounce 2s infinite;
+}
+.merchant-anim { animation: wave 2s infinite alternate; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+
+@keyframes wave {
+  0% { transform: rotate(-5deg);}
+  100% { transform: rotate(5deg);}
+}
+
+.market {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  filter: contrast(1.05);
+}
+
+ul { list-style: none; padding: 0; }
+li {
+  background: #b2ebf2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-btn {
+  background: #ffb300;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.item-btn:hover { background: #fff176; }
+
+#trade-area {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+#result {
+  min-height: 30px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 18px;
+}
